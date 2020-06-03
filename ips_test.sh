@@ -7,7 +7,7 @@
 # Make your settings here!
 Wifi_Iface="wlan1"
 Wifi_MonIface="wlan1"    # check with ifconfig that you are using the correct monitor interface
-Wifi_Essid="Medusa"      # this is the SSID, not the Mac-Address of your Access Point
+Wifi_Essid="YourSSID"      # this is the SSID, not the Mac-Address of your Access Point
 Use5GHz=false		 # use an anettene for 2.4 Ghz und 5 GHz networks, set "false" for 2.4 Ghz only
 MacKnown_FILE="mac_known.txt"
 MacDiff_FILE="mac_diff.txt"
