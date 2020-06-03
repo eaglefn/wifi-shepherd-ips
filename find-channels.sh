@@ -18,10 +18,13 @@
 # Make your settings here!
 Wifi_Iface="wlan1"
 Wifi_MonIface="wlan1" 	 # check with ifconfig that you are using the correct monitor interface
-Wifi_Essid="FreeWiFi"      # this is the SSID, not the Mac-Address of your Access Point
-Time_to_wait="30"        # time to run airodump-ng to collect channels (in seconds)
+Wifi_Essid="Medusa"      # this is the SSID, not the Mac-Address of your Access Point
+Time_to_wait="60"        # time to run airodump-ng to collect channels (in seconds)
 #-------------------------------------------------------------------------------------------------------
 #set your WLAN-Adapter in monitor mode
+
+#sudo airmon-ng stop "$Wifi_MonIface" >/dev/null 2>&1
+#sudo airmon-ng start "$Wifi_Iface" >/dev/null 2>&1
 
 sudo ip link set "$Wifi_Iface" down
 sudo iw dev "$Wifi_Iface" set type monitor
@@ -31,7 +34,7 @@ sudo ip link set "$Wifi_Iface" up
 #For that reason I'm usig "screen" to run it and kill all sessions after a time period.
 
 #runs airodump-ng and saves output to scan-01.csv
-screen -d -m sudo airodump-ng -a -h --essid "$Wifi_Essid" -w scan --output-format csv "$Wifi_MonIface"
+screen -d -m sudo airodump-ng -a -h --essid "$Wifi_Essid" --band ag -w scan --output-format csv "$Wifi_MonIface"
 sleep  "$Time_to_wait"
 
 #find all detached screen sessions and kill them
@@ -42,9 +45,10 @@ grep "$Wifi_Essid"  scan-01.csv | cut -d "," -f 4 | tr -d ' '| sort | uniq | sed
 
 #create comma separated list with channels
 echo $(paste -sd, channels.tmp) > channels.txt
-cat channels.tmp
-cat channels.txt
+
+echo -n "Your Wifi network is using the following channel(s): ";cat channels.txt
 
 # cleanup
 sudo rm scan-01.csv channels.tmp
+#sudo airmon-ng stop "$Wifi_MonIface" >/dev/null 2>&1
 sudo ip link set "$Wifi_Iface" down
