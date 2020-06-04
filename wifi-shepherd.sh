@@ -21,7 +21,7 @@ IPS_Mode=true # set true or false
 Wait_to_Attack=10 #  start attack after 300 seconds
 
 # Don't change unless you know what you are doing.
-Wifi_Shepherd_DIR="/home/pi/wifi-shepherd/"
+Wifi_Shepherd_DIR="/home/pi/wifi-shepherd-ips/"
 Nmaptocsv_DIR=""$Wifi_Shepherd_DIR"nmaptocsv"
 Webserver_DIR="/var/www/html"
 Webserver_CGI="/var/www/cgi-bin/"
