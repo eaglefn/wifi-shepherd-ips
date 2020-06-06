@@ -12,11 +12,11 @@
 #------------------------------------------------------------------------------------------------------
 # Make your settings here!
 Wifi_Shepherd_Hostname="raspberrypi.lan"
-Wifi_Network="192.168.1.0/24"
+Wifi_Network="192.168.171.0/24"
 
 #MessageText="Alert! Wifi Shepherd found the following new devices in your network!"
 MessageText="Achtung! Wifi Shepherd hat folgende neuen Geräte in Ihrem Netzwerk gefunden!"
-EmailReceiver="email@host.de"
+EmailReceiver="frank@fnol.de"
 IPS_Mode=true # set true or false
 Wait_to_Attack=10 #  start attack after 300 seconds
 
