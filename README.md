@@ -1,6 +1,6 @@
 # Wifi-Shepherd-IPS
 
-(https://github.com/eaglefn/wifi-shepherd/blob/master/images/wifi-shepherd-ips.png?raw=true)
+![alt text](https://github.com/eaglefn/wifi-shepherd-ips/blob/master/images/wifi-shepherd-ips1.png?raw=true)
 
 
 ## Description
