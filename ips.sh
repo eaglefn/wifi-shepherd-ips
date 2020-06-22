@@ -58,7 +58,7 @@ do
    echo "5 - Watch attacks"
    echo "6 - Cancel all attacks and delete devices found"
    echo "7 - Cancel all attacks and add found devices"
-   echo "8 - Find all Access Points in your Environment"
+   echo "8 - Find all Access Points in your environment"
    echo ""
    echo "r - Reboot Wifi-Shepherd"
    echo "q - quit"
