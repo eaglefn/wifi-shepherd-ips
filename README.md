@@ -15,7 +15,7 @@ The installation is very simple. You can create this easy solution for free in t
 
 ## STEP 1:  Download the Wifi-Shepherd-IPS image 
 
-Download the Image. You will find it under “Releases”. 
+Download the Image. You will find it under “Release”. 
 
 Create the following files on the boot partition:
 
