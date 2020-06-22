@@ -126,14 +126,14 @@ DataTables https://www.datatables.net are used to enhance the accessibility of d
 
 ## Links
 
-You will find more information (German language only) on pentestit.de https://pentestit.de/wifi-shepherd-teil-1-installieren-und-einrichten/
+You will find more information (German language only) on pentestit.de 
 
-https://pentestit.de/wifi-shepherd-teil-2-anpassen-und-erweitern/
+https://pentestit.de/wifi-shepherd-als-intrusion-protection-system-einrichten/
 
-https://www.youtube.com/watch?v=gdm6kQtu55A
+https://www.youtube.com/watch?v=YKMrF_nhzrE
 
 
 ## Releases
 
 Download the Wifi-Shepherd image (540 MB), unzip it and copy it to your SD card. Enjoy the easy setup.
-https://github.com/eaglefn/wifi-shepherd/releases
+https://github.com/eaglefn/wifi-shepherd-ips/releases
