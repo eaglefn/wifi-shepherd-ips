@@ -135,5 +135,5 @@ https://www.youtube.com/watch?v=YKMrF_nhzrE
 
 ## Releases
 
-Download the Wifi-Shepherd image (540 MB), unzip it and copy it to your SD card. Enjoy the easy setup.
+Download the Wifi-Shepherd image (870 MB), unzip it and copy it to your SD card. Enjoy the easy setup.
 https://github.com/eaglefn/wifi-shepherd-ips/releases
